@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background ="@color/colorPrimary"
+        app:titleTextColor="@color/white"
+        android:id="@+id/toolbarFaculty">
+    </android.support.v7.widget.Toolbar>
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:id="@+id/ivFaculty"
+        android:layout_below="@+id/toolbarFaculty">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:src="@drawable/faculty"
+            android:id="@+id/iv1"/>
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/calendar"
+        android:id="@+id/iv2"/>
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/faculty"
+        android:id="@+id/iv3"/>
+
+         <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/calendar1"
+        android:id="@+id/iv4"/>
+    </ViewFlipper>
+    <ListView
+        android:id="@+id/lvFaculty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ivFaculty"
+        android:dividerHeight="10dp"></ListView>
+</RelativeLayout>
